@@ -1,5 +1,6 @@
 import React from 'react';
 
-const AppContext = React.createContext();
 
-export default AppContext;
+const MovieContext = React.createContext();
+
+export default MovieContext;
