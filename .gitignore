@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+.cache
+
+# Build directory
+/public
+.idea/
+
 # testing
 /coverage
 
