@@ -2,7 +2,7 @@
   "name": "movie-tinder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mihauko.github.io/movie-tinder",
+  "homepage": "https://mihauko.github.io/movie-tinder/",
   "dependencies": {
     "@material-ui/core": "^4.9.7",
     "@testing-library/jest-dom": "^5.3.0",
