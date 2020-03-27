@@ -47,7 +47,10 @@ const MovieTinderQueryProvider = ({ children }) => {
     const fetchMovie = async () => {
       try {
         const response = await axios.get(RECOMMENDATIONS_URL);
-        setMoviesList(response.data);
+        if (response) {
+          setMoviesList(response.data);
+        }
+        console.log('Not yet get response - loading');
       } catch (error) {
         console.error(error);
       }
@@ -56,7 +59,9 @@ const MovieTinderQueryProvider = ({ children }) => {
     if (prevMovieList === undefined) {
       fetchMovie();
     }
-    filterMovies(moviesList);
+    if (moviesList) {
+      filterMovies(moviesList);
+    }
   });
 
   const movieContextData = {
