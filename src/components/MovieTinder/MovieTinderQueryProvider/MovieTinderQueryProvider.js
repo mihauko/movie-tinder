@@ -3,32 +3,50 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 
 import MovieContext from '../context';
+import { RECOMMENDATIONS_URL, buttonActionTypes } from '../../../settings';
 
-
-const URL = 'http://127.0.0.1:3001/recommendations/';
 
 const MovieTinderQueryProvider = ({ children }) => {
   const [moviesList, setMoviesList] = useState([]);
-  const prevMovieList = usePrevious(moviesList);
-  const [filteredMovie, setFilteredMovieList] = useState([]);
-
-  function usePrevious(value) {
+  const usePrevious = (value) => {
     const ref = useRef();
     useEffect(() => {
       ref.current = value;
     });
     return ref.current;
-  }
+  };
+  const prevMovieList = usePrevious(moviesList);
+  const [filteredMovie, setFilteredMovieList] = useState([]);
 
-  function filterMovies(list) {
+  const filterMovies = (list) => {
     const movie = list.find((element) => element.isAccepted === undefined);
     setFilteredMovieList(movie);
-  }
+  };
+
+  const updateMovie = (updatedMovieData) => {
+    const movieId = moviesList.findIndex((movie) => movie.id === updatedMovieData.id);
+    moviesList[movieId] = updatedMovieData;
+    setMoviesList(moviesList);
+    filterMovies(moviesList);
+  };
+
+  const handleClick = async (actionType) => {
+    try {
+      const response = await axios.put(`${RECOMMENDATIONS_URL}${filteredMovie.id}/${actionType}`, {
+        ...filteredMovie,
+        isAccepted: buttonActionTypes.ACCEPT === actionType,
+      });
+      updateMovie(response.data);
+      console.log(actionType);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   useEffect(() => {
     const fetchMovie = async () => {
       try {
-        const response = await axios.get(URL);
+        const response = await axios.get(RECOMMENDATIONS_URL);
         setMoviesList(response.data);
       } catch (error) {
         console.error(error);
@@ -41,18 +59,9 @@ const MovieTinderQueryProvider = ({ children }) => {
     filterMovies(moviesList);
   });
 
-  function updateMovie(updatedMovie) {
-    const movieId = moviesList.findIndex((movie) => movie.id === updatedMovie.id);
-    moviesList[movieId] = updatedMovie;
-    console.log(moviesList);
-    setMoviesList(moviesList);
-    filterMovies(moviesList);
-  }
-
-  // const { data, loading, error } = queryData;
   const movieContextData = {
     filteredMovie,
-    updateMovie,
+    handleClick,
   };
   return (
     <MovieContext.Provider value={movieContextData}>
