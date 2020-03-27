@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/movie-tinder/static/css/main.915dc083.chunk.css",
-    "main.js": "/movie-tinder/static/js/main.555afa2e.chunk.js",
-    "main.js.map": "/movie-tinder/static/js/main.555afa2e.chunk.js.map",
+    "main.js": "/movie-tinder/static/js/main.ef3399a4.chunk.js",
+    "main.js.map": "/movie-tinder/static/js/main.ef3399a4.chunk.js.map",
     "runtime-main.js": "/movie-tinder/static/js/runtime-main.a9b01e81.js",
     "runtime-main.js.map": "/movie-tinder/static/js/runtime-main.a9b01e81.js.map",
     "static/js/2.5ec3a267.chunk.js": "/movie-tinder/static/js/2.5ec3a267.chunk.js",
     "static/js/2.5ec3a267.chunk.js.map": "/movie-tinder/static/js/2.5ec3a267.chunk.js.map",
     "index.html": "/movie-tinder/index.html",
-    "precache-manifest.754145d93e67577a7e739b919b98c529.js": "/movie-tinder/precache-manifest.754145d93e67577a7e739b919b98c529.js",
+    "precache-manifest.3e8527b4ee4cde630cd910c160f1a1e3.js": "/movie-tinder/precache-manifest.3e8527b4ee4cde630cd910c160f1a1e3.js",
     "service-worker.js": "/movie-tinder/service-worker.js",
     "static/css/main.915dc083.chunk.css.map": "/movie-tinder/static/css/main.915dc083.chunk.css.map",
     "static/js/2.5ec3a267.chunk.js.LICENSE.txt": "/movie-tinder/static/js/2.5ec3a267.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a9b01e81.js",
     "static/js/2.5ec3a267.chunk.js",
     "static/css/main.915dc083.chunk.css",
-    "static/js/main.555afa2e.chunk.js"
+    "static/js/main.ef3399a4.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb17c8d53f0dc66210f35ed5b9df978a",
+    "revision": "901398333c25562b75e7c69910ecced0",
     "url": "/movie-tinder/index.html"
   },
   {
-    "revision": "73c092d34e6b4e4faa23",
+    "revision": "0900b4f7bd8c2e3a4c01",
     "url": "/movie-tinder/static/css/main.915dc083.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie-tinder/static/js/2.5ec3a267.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "73c092d34e6b4e4faa23",
-    "url": "/movie-tinder/static/js/main.555afa2e.chunk.js"
+    "revision": "0900b4f7bd8c2e3a4c01",
+    "url": "/movie-tinder/static/js/main.ef3399a4.chunk.js"
   },
   {
     "revision": "c9cd670789c0b2990664",
