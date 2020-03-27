@@ -16,7 +16,7 @@ const MovieSwipeWrapper = ({ children, handleSwipe }) => {
 
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
-    <Root {...handlers}>
+    <Root id="swipeable" {...handlers}>
       {children}
     </Root>
   );

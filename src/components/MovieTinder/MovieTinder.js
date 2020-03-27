@@ -11,7 +11,7 @@ import MovieSwipeWrapper from './MovieSwipeWrapper';
 const MovieTinder = () => (
   <MovieContext.Consumer>
     {({ filteredMovie, handleClick }) => {
-      if (!filteredMovie) return <div>Loading data..</div>
+      if (!filteredMovie) return <div>Loading data..</div>;
       return (
         <MovieSwipeWrapper handleSwipe={handleClick}>
           <MovieHeader title={filteredMovie.title} rating={filteredMovie.rating} />
@@ -23,10 +23,5 @@ const MovieTinder = () => (
     }}
   </MovieContext.Consumer>
 );
-
-
-MovieTinder.propTypes = {
-
-};
 
 export default MovieTinder;

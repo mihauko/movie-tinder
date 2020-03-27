@@ -4,13 +4,11 @@ import PropTypes from 'prop-types';
 import { ImgWrapper, Img } from './styles';
 
 
-const MovieImg = ({ src, title }) => {
-  return (
-    <ImgWrapper>
-      <Img src={src} alt={title} title={title} />
-    </ImgWrapper>
-  );
-};
+const MovieImg = ({ src, title }) => (
+  <ImgWrapper>
+    <Img src={src} alt={title} title={title} />
+  </ImgWrapper>
+);
 
 MovieImg.propTypes = {
   src: PropTypes.string,

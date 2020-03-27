@@ -1,20 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AppContext from '../context';
 import { Root } from './styles';
 
 
-const MovieDescription = ({ summary }) => {
-  return (
-    <Root>
-      {summary}
-    </Root>
-  );
-};
+const MovieDescription = ({ summary }) => (
+  <Root>
+    {summary}
+  </Root>
+);
+
 
 MovieDescription.propTypes = {
-
+  summary: PropTypes.string,
 };
 
 export default MovieDescription;
