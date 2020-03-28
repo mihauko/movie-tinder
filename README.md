@@ -1,3 +1,15 @@
+Page run on :
+https://mihauko.github.io/movie-tinder/
+
+To get data use local server:
+
+`npm run json`
+
+To develop change see 
+https://github.com/mihauko/movie-tinder/blob/master/doc/development.md
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
