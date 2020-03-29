@@ -7,6 +7,6 @@ import MovieDescription from '../MovieDescription';
 describe('<MovieDescription>', () => {
   it('render component correctly', () => {
     const container = render(<MovieDescription summary="Description text" />);
-    expect(container).toMatchSnapshot();
+    expect(container.container).toMatchSnapshot();
   });
 });

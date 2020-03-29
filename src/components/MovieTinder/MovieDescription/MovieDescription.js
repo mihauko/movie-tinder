@@ -10,7 +10,6 @@ const MovieDescription = ({ summary }) => (
   </Root>
 );
 
-
 MovieDescription.propTypes = {
   summary: PropTypes.string,
 };

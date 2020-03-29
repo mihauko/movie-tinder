@@ -7,7 +7,7 @@ Object {
     <div>
       <div
         aria-label="outlined secondary button group"
-        class="MuiButtonGroup-root sc-AxjAm fARKZQ MuiButtonGroup-fullWidth"
+        class="MuiButtonGroup-root sc-AxjAm kUwoHz MuiButtonGroup-fullWidth"
         role="group"
       >
         <button
@@ -44,7 +44,7 @@ Object {
   "container": <div>
     <div
       aria-label="outlined secondary button group"
-      class="MuiButtonGroup-root sc-AxjAm fARKZQ MuiButtonGroup-fullWidth"
+      class="MuiButtonGroup-root sc-AxjAm kUwoHz MuiButtonGroup-fullWidth"
       role="group"
     >
       <button
