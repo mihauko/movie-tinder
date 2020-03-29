@@ -1,11 +1,11 @@
 Page run on :
-https://mihauko.github.io/<project name>
+https://mihauko.github.io/movie-tinder/
 
 To get data use local server:
 
 `npm run json`
 
-To develop change see
+To develop changes see
 
 `/doc/development.md`
 
