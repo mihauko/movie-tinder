@@ -6,28 +6,18 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm fDEmJb"
-      >
-        <img
-          alt="Image"
-          class="sc-AxirZ fHPRNE"
-          src="/url/path.jpg"
-          title="Image"
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-AxjAm fDEmJb"
-    >
-      <img
-        alt="Image"
-        class="sc-AxirZ fHPRNE"
+        class="sc-AxjAm fULEks"
         src="/url/path.jpg"
         title="Image"
       />
     </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxjAm fULEks"
+      src="/url/path.jpg"
+      title="Image"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

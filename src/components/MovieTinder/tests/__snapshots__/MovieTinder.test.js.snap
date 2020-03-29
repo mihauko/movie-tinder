@@ -6,32 +6,27 @@ Object {
   "baseElement": <body>
     <div>
       <article
-        class="sc-AxgMl cuLIma"
+        class="sc-AxhUy eMJvYl"
         id="swipeable"
       >
-        <div
+        <header
           class="sc-AxjAm AOfgU"
         >
           Inferno 5.3/10
-        </div>
+        </header>
         <div
-          class="sc-AxirZ dqVvws"
-        >
-          <img
-            alt="Inferno"
-            class="sc-AxiKw jipEWU"
-            src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
-            title="Inferno"
-          />
-        </div>
-        <div
-          class="sc-AxhCb iLrMEl"
+          class="sc-AxirZ icBOuZ"
+          src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+          title="Inferno"
+        />
+        <p
+          class="sc-AxiKw bVZpsh"
         >
           Lorem ipsum….
-        </div>
+        </p>
         <div
           aria-label="outlined secondary button group"
-          class="MuiButtonGroup-root sc-AxhUy bKjbty MuiButtonGroup-fullWidth"
+          class="MuiButtonGroup-root sc-AxhCb eVNrLU MuiButtonGroup-fullWidth"
           role="group"
         >
           <button
@@ -68,32 +63,27 @@ Object {
   </body>,
   "container": <div>
     <article
-      class="sc-AxgMl cuLIma"
+      class="sc-AxhUy eMJvYl"
       id="swipeable"
     >
-      <div
+      <header
         class="sc-AxjAm AOfgU"
       >
         Inferno 5.3/10
-      </div>
+      </header>
       <div
-        class="sc-AxirZ dqVvws"
-      >
-        <img
-          alt="Inferno"
-          class="sc-AxiKw jipEWU"
-          src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
-          title="Inferno"
-        />
-      </div>
-      <div
-        class="sc-AxhCb iLrMEl"
+        class="sc-AxirZ icBOuZ"
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
+        title="Inferno"
+      />
+      <p
+        class="sc-AxiKw bVZpsh"
       >
         Lorem ipsum….
-      </div>
+      </p>
       <div
         aria-label="outlined secondary button group"
-        class="MuiButtonGroup-root sc-AxhUy bKjbty MuiButtonGroup-fullWidth"
+        class="MuiButtonGroup-root sc-AxhCb eVNrLU MuiButtonGroup-fullWidth"
         role="group"
       >
         <button

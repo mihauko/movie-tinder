@@ -7,5 +7,9 @@ export const StyledButtonsGroup = styled(ButtonGroup)`
   
   .MuiButton-containedPrimary {
     background-color: forestgreen;
+    
+    &:focus {
+      background-color: forestgreen;
+    }
   }
 `;

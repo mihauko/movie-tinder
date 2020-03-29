@@ -8,6 +8,7 @@ import { RECOMMENDATIONS_URL, buttonActionTypes } from '../../../settings';
 
 const MovieTinderQueryProvider = ({ children }) => {
   const [moviesList, setMoviesList] = useState([]);
+  const [isLoadingData, setLoadingStatus] = useState(false);
   const usePrevious = (value) => {
     const ref = useRef();
     useEffect(() => {
@@ -48,6 +49,7 @@ const MovieTinderQueryProvider = ({ children }) => {
       try {
         const response = await axios.get(RECOMMENDATIONS_URL);
         if (response) {
+          setLoadingStatus(false);
           setMoviesList(response.data);
         }
         console.log('Not yet get response - loading');
@@ -57,14 +59,16 @@ const MovieTinderQueryProvider = ({ children }) => {
     };
 
     if (prevMovieList === undefined) {
+      setLoadingStatus(true);
       fetchMovie();
     }
     if (moviesList) {
       filterMovies(moviesList);
     }
-  });
+  }, [prevMovieList, moviesList]);
 
   const movieContextData = {
+    isLoadingData,
     filteredMovie,
     handleClick,
   };
